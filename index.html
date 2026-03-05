@@ -19,6 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<script type="text/javascript" src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
@@ -45,11 +47,11 @@
 	<p class="text14 textRegular">2026년 4월 11일 토요일 오후 1시<br>온양민속박물관 야외공연장</p>
 </div>
 
-<div class="imgContainer">
+<div data-aos="fade-up" class="imgContainer">
 	<img src="img/photo-intro.jpeg" class="photoIntro" alt="왼쪽 하얀 드레스를 입고 미소 짓는 미현과 오른쪽 검정 자켓을 입은 주노">
 </div>
 
-<div class="invitationTextContainer">
+<div data-aos="fade-up" class="invitationTextContainer">
 	<p class="text14 textRegular textCenter">저희 두 사람이 신뢰와 사랑으로<br>함께함을 약속하는 날,<br>소중한 분들을 초대하고자 합니다.</p>
 </div>
 
@@ -302,5 +304,10 @@
 
 
 </div>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>

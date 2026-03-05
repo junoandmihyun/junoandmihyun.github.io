@@ -149,25 +149,29 @@ function copyAccountSix() {
 }
 
 // D-day Countdown
-const targetDate = new Date("2026-04-11T13:00:00");
+document.addEventListener("DOMContentLoaded", function () {
 
-function updateCountdown() {
-  const now = new Date();
-  const diff = targetDate - now;
+    const targetDate = new Date("2026-04-11T13:00:00");
 
-  if (diff <= 0) {
-    document.getElementById("countdown").textContent = "0 - 0 - 0 - 0";
-    return;
-  }
+    function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
 
-  const seconds = Math.floor(diff / 1000) % 60;
-  const minutes = Math.floor(diff / (1000 * 60)) % 60;
-  const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    if (diff <= 0) {
+        document.getElementById("countdown").textContent = "0 - 0 - 0 - 0";
+        return;
+    }
 
-  document.getElementById("countdown").textContent =
-    days + " - " + hours + " - " + minutes + " - " + seconds;
-}
+    const seconds = Math.floor(diff / 1000) % 60;
+    const minutes = Math.floor(diff / (1000 * 60)) % 60;
+    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-updateCountdown();
-setInterval(updateCountdown, 1000);
+    document.getElementById("countdown").textContent =
+        days + " - " + hours + " - " + minutes + " - " + seconds;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+});

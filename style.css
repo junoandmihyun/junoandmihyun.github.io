@@ -377,6 +377,10 @@ img {
         margin: 16px 0;
         background: var(--base-gray);
     }
+
+.footer {
+    padding: 24px 20px;
+}
 /* Content Elements */
 
 

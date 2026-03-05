@@ -352,7 +352,7 @@ img {
         overflow: hidden;
     }
     .toggleContents {
-        padding: 4px 16px;
+        padding: 16px 4px ;
     }
     .toggleContents .toggleRow {
         display: -webkit-box;

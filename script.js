@@ -151,15 +151,20 @@ function copyAccountSix() {
 // D-day Countdown
 document.addEventListener("DOMContentLoaded", function () {
 
-    const targetDate = new Date("2026-04-11T13:00:00");
+  const targetDate = new Date("2026-04-11T13:00:00+09:00");
 
-    function updateCountdown() {
+  function pad(n) {
+    return String(n).padStart(2, "0");
+  }
+
+  function updateCountdown() {
     const now = new Date();
     const diff = targetDate - now;
 
     if (diff <= 0) {
-        document.getElementById("countdown").textContent = "0 - 0 - 0 - 0";
-        return;
+      document.getElementById("countdown").textContent = "0 - 00 - 00 - 00";
+      document.getElementById("dday-text").textContent = "d-day 입니다";
+      return;
     }
 
     const seconds = Math.floor(diff / 1000) % 60;
@@ -168,10 +173,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
     document.getElementById("countdown").textContent =
-        days + " - " + hours + " - " + minutes + " - " + seconds;
-    }
+      days + " - " + pad(hours) + " - " + pad(minutes) + " - " + pad(seconds);
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+    document.getElementById("dday-text").textContent =
+      "d-day 까지 " + days + "일 남았습니다";
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
 
 });

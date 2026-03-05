@@ -159,6 +159,7 @@ img {
 .imgContainer {
     position:relative;
     padding: 0 20px;
+    min-height: 500px;
 }
     .photoIntro {
         width:100%;

@@ -30,7 +30,9 @@
 .textBold {
     font-weight: 700;
 }
-
+.textCenter {
+    text-align: center;
+}
 p {
     line-height:1.5;
     margin: 0;
@@ -53,9 +55,9 @@ a {
 --gray-250: #E8E8E8;
 --gray-150: #F5F5F5;
 --ivory-150: #FAF4E6;
---ivory-100: #FAF7F0;
---lime-750: #438643;
---lime-700: #3D9E43;
+--ivory-100: #EBEBEB;
+--lime-750: #282D2D;
+--lime-700: #282D2D;
 --white: #FFFFFF;
   }
 /* Color */
@@ -119,7 +121,7 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 12px;
-    background-color: var(--ivory-150);
+    border: 1px solid var(--lime-700);
     color: var(--lime-750);
     font-size: 0.75rem;
     font-weight: 500;
@@ -281,16 +283,14 @@ img {
         font-weight: 400;
     }
     .howToGoContainer .row .left {
-        -webkit-box-flex: 2;
-            -ms-flex: 2;
-                flex: 2;
+        width: 60px;
         font-size: 0.75rem;
         font-weight: 400;
     }
     .howToGoContainer .row .right {
-        -webkit-box-flex: 5;
-            -ms-flex: 5;
-                flex: 5;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         font-size: 0.75rem;
         font-weight: 400;
     }
@@ -349,7 +349,6 @@ img {
     }
     .bankAccountItem {
         margin-bottom: 8px;
-        border:1px solid var(--ivory-150);
         border-radius: 6px;
         overflow: hidden;
     }

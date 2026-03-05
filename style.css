@@ -54,10 +54,9 @@ a {
 --gray-300: #DFDFDF;
 --gray-250: #E8E8E8;
 --gray-150: #F5F5F5;
---ivory-150: #EBEBEB;
---ivory-100: #EBEBEB;
---lime-750: #282D2D;
---lime-700: #999894;
+--base-gray: #EBEBEB;
+--point-1: #282D2D;
+--point-2: #999894;
 --white: #FFFFFF;
   }
 /* Color */
@@ -87,7 +86,7 @@ img {
             justify-content: center;
     padding: 12px;
     border-radius: 6px;
-    background-color: var(--lime-750);
+    background-color: var(--point-1);
     color: var(--white);
     font-size: 0.75rem;
     font-weight: 500;
@@ -105,8 +104,8 @@ img {
             justify-content: center;
     padding: 12px;
     border-radius: 6px;
-    border: 1px solid var(--lime-700);
-    color: var(--lime-700);
+    border: 1px solid var(--point-2);
+    color: var(--point-1);
     font-size: 0.75rem;
     font-weight: 500;
 }
@@ -121,9 +120,9 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 12px;
-    border: 1px solid var(--lime-700);
+    border: 1px solid var(--point-2);
     border-radius: 6px;
-    color: var(--lime-750);
+    color: var(--point-1);
     font-size: 0.75rem;
     font-weight: 500;
     cursor: pointer;
@@ -134,8 +133,8 @@ img {
     justify-content: center;
     padding: 6px 12px;
     border-radius: 3px;
-    border: 1px solid var(--lime-700);
-    color: var(--lime-700);
+    border: 1px solid var(--point-2);
+    color: var(--point-2);
     font-size: 0.75rem;
     font-weight: 500;
     cursor: pointer;
@@ -154,7 +153,7 @@ img {
         margin-bottom: 24px;
     }
     .headerWrap p {
-        color: var(--lime-750);
+        color: var(--point-1);
     }
 
 .imgContainer {
@@ -222,7 +221,7 @@ img {
         margin-right: 26px;
     }
     .childName {
-        color: var(--lime-750);
+        color: var(--point-1);
     }
 
 
@@ -235,7 +234,7 @@ img {
 }
 
 .addressWrap {
-    background: var(--ivory-100)url("img/bg-noise.png");
+    background: var(--base-gray)url("img/bg-noise.png");
     background-size: 100px 100px;
     padding: 64px 20px;
 }
@@ -376,7 +375,7 @@ img {
     .toggleContents .toggleRowDivder {
         height: 1px;
         margin: 16px 0;
-        background: var(--ivory-150);
+        background: var(--base-gray);
     }
 /* Content Elements */
 

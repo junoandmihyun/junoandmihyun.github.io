@@ -54,10 +54,10 @@ a {
 --gray-300: #DFDFDF;
 --gray-250: #E8E8E8;
 --gray-150: #F5F5F5;
---ivory-150: #FAF4E6;
+--ivory-150: #EBEBEB;
 --ivory-100: #EBEBEB;
 --lime-750: #282D2D;
---lime-700: #282D2D;
+--lime-700: #999894;
 --white: #FFFFFF;
   }
 /* Color */
@@ -257,7 +257,7 @@ img {
         height: auto;
         border: 1px solid var(--gray-250);
         border-radius: 6px;
-        margin-bottom: 24px;
+        margin: 24px 0;
     }
 
     .buttonContainer {

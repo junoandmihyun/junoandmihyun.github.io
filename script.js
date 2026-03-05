@@ -149,35 +149,26 @@ function copyAccountSix() {
 }
 
 // 목표 날짜 설정 (2026년 4월 11일 13시)
-window.onload = function() {
-    // 목표 날짜: 2026년 4월 11일 13시
-    const targetDate = new Date('2026-04-11T13:00:00').getTime();
-    const displayElement = document.getElementById('d-day-display');
+function updateTimer() {
+    const future = Date.parse("2024/01/01 00:00:00");
+ const now = new Date();
+ const diff = future - now;
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
+ const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+ const hours = Math.floor(diff / (1000 * 60 * 60));
+ const mins = Math.floor(diff / (1000 * 60));
+ const secs = Math.floor(diff / 1000);
 
-        // 시간이 종료되었을 때
-        if (distance < 0) {
-            displayElement.innerText = "D-Day가 도달했습니다!";
-            clearInterval(timer);
-            return;
-        }
+ const d = days;
+ const h = hours - days * 24;
+ const m = mins - hours * 60;
+ const s = secs - mins * 60;
+ document.getElementById("timer")
+  .innerHTML =
+  '<div>' + d + '<span>Days</span></div>' +
+  '<div>' + h + '<span>Hours</span></div>' +
+  '<div>' + m + '<span>Minutes</span></div>' +
+  '<div>' + s + '<span>Seconds</span></div>';
+}
 
-        // 시간 단위 계산
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // 화면에 출력 (형식: [day] - [hour] - [minutes] - [seconds])
-        displayElement.innerText = `${days} - ${String(hours).padStart(2, '0')} - ${String(minutes).padStart(2, '0')} - ${String(seconds).padStart(2, '0')}`;
-    }
-
-    // 1초마다 업데이트
-    const timer = setInterval(updateCountdown, 1000);
-    
-    // 즉시 실행 (초기 1초 대기 방지)
-    updateCountdown();
-};
+setInterval(updateTimer, 1000);

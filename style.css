@@ -69,7 +69,7 @@ body {
     color: var(--gray-770);
 }
 .pageWrap {
-    max-width: 440px;
+    max-width: 480px;
     margin: 0 auto;
 }
 img {
@@ -146,7 +146,7 @@ img {
 }
 
 .headerWrap {
-    padding: 32px 20px;
+    padding: 60px 20px;
 }
     .titleMain {
         width: 184px;
@@ -227,7 +227,7 @@ img {
 
 
 .calendarContainer {
-    padding: 0 32px 64px 32px;
+    padding: 20px 32px 64px 32px;
 }
 .calendarContainer img.calendar {
     width: 100%;

@@ -122,6 +122,7 @@ img {
             justify-content: center;
     padding: 12px;
     border: 1px solid var(--lime-700);
+    border-radius: 6px;
     color: var(--lime-750);
     font-size: 0.75rem;
     font-weight: 500;
@@ -349,7 +350,6 @@ img {
     }
     .bankAccountItem {
         margin-bottom: 8px;
-        border-radius: 6px;
         overflow: hidden;
     }
     .toggleContents {

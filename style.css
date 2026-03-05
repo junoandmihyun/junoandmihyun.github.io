@@ -1,0 +1,506 @@
+* {
+    word-break: keep-all;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font: -apple-system-body;
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Text Elements */
+.text16 {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.text14 {
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+.text12 {
+    font-size: 0.75em;
+    line-height: 1.4;
+}
+.textRegular {
+    font-weight: 400;
+}
+.textMedium {
+    font-weight: 500;
+}
+.textBold {
+    font-weight: 700;
+}
+
+p {
+    line-height:1.5;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* Text Elements */
+
+/* Color */
+:root {
+--gray-900: #262222;
+--gray-770: #383838;
+--gray-650: #616161;
+--gray-500: #949494;
+--gray-400: #B7B7B7;
+--gray-300: #DFDFDF;
+--gray-250: #E8E8E8;
+--gray-150: #F5F5F5;
+--ivory-150: #FAF4E6;
+--ivory-100: #FAF7F0;
+--lime-750: #438643;
+--lime-700: #3D9E43;
+--white: #FFFFFF;
+  }
+/* Color */
+
+/* Content Elements */
+body {
+    background: var(--white) url("img/bg-noise.png");
+    background-size: 100px 100px;
+    color: var(--gray-770);
+}
+.pageWrap {
+    max-width: 440px;
+    margin: 0 auto;
+}
+img {
+    display: block;
+}
+.boxButtonSolid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--lime-750);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.boxButtonOutline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--lime-700);
+    color: var(--lime-700);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.boxButtonSolidToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px;
+    background-color: var(--ivory-150);
+    color: var(--lime-750);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.boxButtonOutlineSmall {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 3px;
+    border: 1px solid var(--lime-700);
+    color: var(--lime-700);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.spacing24 {
+    height: 24px;
+}
+
+.headerWrap {
+    padding: 32px 20px;
+}
+    .titleMain {
+        width: 182px;
+        height: 64px;
+        margin-bottom: 24px;
+    }
+    .headerWrap p {
+        color: var(--lime-750);
+    }
+
+.imgContainer {
+    position:relative;
+    padding: 0 20px;
+}
+    .photoIntro {
+        width:100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+.invitationTextContainer {
+    padding: 40px 20px 64px 20px;
+}
+    .invitationTextContainer p {
+        color: var(--gray-650);
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+    .invitationTextContainer p:last-child {
+        margin-bottom: 0;
+    }
+
+.divider {
+    margin: 0 160px;
+    height: 1px;
+    background-color: var(--gray-250);
+}
+
+.parentContainer {
+    padding: 64px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+    .parentContainer .row {
+        margin-bottom: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .parentContainer .row:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .parentName {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: var(--gray-650);
+        margin-right: 12px;
+    }
+    .parentContainer .row:nth-child(2) .parentName {
+        margin-right: 26px;
+    }
+    .childName {
+        color: var(--lime-750);
+    }
+
+
+.calendarContainer {
+    padding: 0 32px 64px 32px;
+}
+.calendarContainer img.calendar {
+    width: 100%;
+    height: auto;
+}
+
+.addressWrap {
+    background: var(--ivory-100)url("img/bg-noise.png");
+    background-size: 100px 100px;
+    padding: 64px 20px;
+}
+    .titleAddress {
+        width: 86px;
+        height: 32px;
+        margin-bottom: 40px;
+    }
+    p.address {
+        color: var(--gray-650);
+        margin-bottom: 4px;
+    }
+    p.tel {
+        color: var(--gray-500);
+        margin-bottom: 24px;
+    }
+    img.map {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--gray-250);
+        border-radius: 6px;
+        margin-bottom: 24px;
+    }
+
+    .buttonContainer {
+        margin-bottom: 40px;
+    }
+    .buttonContainer .boxButtonOutline {
+        margin-bottom: 8px;
+    }
+
+    .howToGoContainer .label {
+        margin-bottom: 8px;
+    }
+    .howToGoContainer .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 8px;
+        color: var(--gray-650);
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .howToGoContainer .row .left {
+        -webkit-box-flex: 2;
+            -ms-flex: 2;
+                flex: 2;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .howToGoContainer .row .right {
+        -webkit-box-flex: 5;
+            -ms-flex: 5;
+                flex: 5;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .howToGoContainer .row.info {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .howToGoContainer .row .icInfo {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+    }
+
+.galleryContainer {
+    padding: 80px 20px 64px 20px;
+}
+    .titleGallery {
+        width: 60px;
+        height: 32px;
+        margin-bottom: 24px;
+    }
+    .gridContainer {
+        display: -ms-grid;
+        display: grid;
+        -webkit-column-gap: 12px;
+           -moz-column-gap: 12px;
+                column-gap: 12px;
+        row-gap: 12px;
+        -ms-grid-columns: auto 12px auto 12px auto;
+        grid-template-columns: auto auto auto;
+    }
+    .gridItem {
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .gridItem img {
+        width: 100%;
+        height: auto;
+    }
+
+.accountNumberContainer {
+    padding: 40px 20px 64px 20px;
+}
+    .accountNumberContainer .titleAccount {
+        width: 132px;
+        height: 32px;
+        margin-bottom: 40px;
+    }
+    .bankAccountItem {
+        margin-bottom: 8px;
+        border:1px solid var(--ivory-150);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .toggleContents {
+        padding: 16px;
+    }
+    .toggleContents .toggleRow {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .toggleContents .toggleRow .label {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        color: var(--gray-650);
+    }
+    .toggleContents .toggleRowDivder {
+        height: 1px;
+        margin: 16px 0;
+        background: var(--ivory-150);
+    }
+/* Content Elements */
+
+
+/* Gallery Modal Elements */
+/* The Modal (background) */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 80px;
+padding-bottom: 60px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: #262222;
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+/* background-color: #fefefe; */
+margin: auto;
+padding: 0;
+width: 90%;
+max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+color: white;
+position: absolute;
+top: 10px;
+right: 25px;
+font-size: 35px;
+font-weight: 300;
+}
+
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px 8px 0;
+    position: absolute;
+    top: -32px;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    padding: 2px 16px;
+    min-height: 12px;
+    color: white;
+}
+.column {
+  float: left;
+  width: calc(100% / 12);
+}
+img.demo {
+    opacity: 0.6;
+    width: 100%;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Gallery Modal Elements */

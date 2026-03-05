@@ -146,8 +146,8 @@ img {
     padding: 32px 20px;
 }
     .titleMain {
-        width: 182px;
-        height: 64px;
+        width: 184px;
+        height: auto;
         margin-bottom: 24px;
     }
     .headerWrap p {
